@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="8dp"
+    android:layout_marginBottom="2dp"
+    >
+
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:id="@+id/parenLayout"
+
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="20dp"
+    android:id="@+id/textTypeTV"
+    android:textSize="16dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:id="@+id/textTV"
+        android:textSize="15dp"/>
+
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/dateTV"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+
+        android:layout_height="25dp"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textSize="16dp"
+        android:layout_gravity="center"
+        android:layout_height="25dp"
+        android:id="@+id/timeTV"
+        />
+    <ToggleButton
+
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:layout_gravity="center"
+        android:padding="5dp"
+
+        android:id="@+id/setTextTime"
+
+        android:textSize="18dp"
+        android:background="@color/backgroundcolormessage"
+
+
+
+        >
+    </ToggleButton>
+
+
+
+</LinearLayout>
+
+
+
+</LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,127 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcoloremail"
+    tools:context="com.example.jahed.bossassistant.EmailFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.3"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/selectDateEmialET"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:hint="SelectDate"
+                android:background="@color/background"
+                />
+            <Button
+                android:id="@+id/selectTimeEmailET"
+                android:layout_width="0dp"
+                android:hint="SelectTime"
+                android:textSize="18dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:onClick="selectTime"
+                android:background="@color/background"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:textSize="13dp"
+                android:id="@+id/user_email"
+                android:hint="Enter your email"
+                />
+            <EditText
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:hint="Enter your password "
+                android:id="@+id/user_password"
+                android:textSize="13dp"
+                android:inputType="textPassword"
+                />
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/writeEmailET"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="To:"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Subject :"
+            android:id="@+id/emailSubjectET"
+
+            />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="text"
+            android:gravity="left"
+            android:ems="10"
+            android:id="@+id/emailTextET"
+            />
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/saveEmailBtn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="set"
+                android:background="@color/background"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/selectFileBtn"
+                android:layout_height="match_parent"
+                android:text="file/img"
+
+                android:background="@color/background"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</FrameLayout>

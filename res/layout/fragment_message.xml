@@ -1,0 +1,78 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundcolormessage"
+    tools:context="com.example.jahed.bossassistant.MessageFragment"
+>
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/SelectDateBT"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:textSize="18dp"
+                android:hint="SelectDate"
+                android:background="@color/background"
+                 />
+            <Button
+                android:id="@+id/selectTimeBT"
+                android:layout_width="0dp"
+                android:hint="SelectTime"
+                android:textSize="18dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="selectTime"
+                android:background="@color/background"
+                tools:ignore="OnClick" />
+
+        </LinearLayout>
+
+
+
+        <EditText
+            android:id="@+id/numberET"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="To : Write number or click hear"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:hint="text"
+            android:gravity="left"
+            android:ems="10"
+            android:maxLength="900"
+            android:id="@+id/massegeTextET"
+            />
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:text="ok"
+            android:background="@color/background"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+</FrameLayout>
